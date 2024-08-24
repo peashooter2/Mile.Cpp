@@ -19,16 +19,16 @@ void EntryPoint()
 
     ::NtSerializeBoot();
 
-    ::DbgPrint("The F@cking MSVC 2015/2017/2019/2022 toolset ruined our $1M project!\n");
-    ::DbgPrint("The F@cking MSVC 2015/2017/2019/2022 toolset ruined our $1M project!\n");
-    ::DbgPrint("The F@cking MSVC 2015/2017/2019/2022 toolset ruined our $1M project!\n");
-    ::DbgPrint("The F@cking MSVC 2015/2017/2019/2022 toolset ruined our $1M project!\n");
-    ::DbgPrint("The F@cking MSVC 2015/2017/2019/2022 toolset ruined our $1M project!\n");
+    ::DbgPrint("For presentation purposes only.\n");
+    ::DbgPrint("For presentation purposes only.\n");
+    ::DbgPrint("For presentation purposes only.\n");
+    ::DbgPrint("For presentation purposes only.\n");
+    ::DbgPrint("For presentation purposes only.\n");
 
     UNICODE_STRING OutputString;
     ::RtlInitUnicodeString(
         &OutputString,
-        L"The F@cking MSVC 2015/2017/2019/2022 toolset ruined our $1M project!\n");
+        L"For presentation purposes only.\n");
     ::NtDisplayString(&OutputString);
 
     ::NtWaitForSingleObject(NtCurrentProcess(), FALSE, nullptr);
